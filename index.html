@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div>
+                <h2>Green Bay Packers</h2>
+                <p>Mit 13 Meisterschaften konnten die Packers bisher die meisten Titel in der Geschichte der NFL gewinnen, davon neun Titel vor der Super-Bowl-Ära und vier Super Bowls. 2022 ist da! </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="img2.png" alt="">
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Ranking</a></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <script type="text/javascript">
+    function menuToggle(){
+        var nav = document.getElementById("nav");
+        nav.classList.toggle('active')
+        var toggle = document.getElementById("toggle");
+        toggle.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
